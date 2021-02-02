@@ -1,0 +1,10 @@
+SecretGenerator:
+- name: mysql-pass
+  literals:
+  - password=wordpressdb-password
+resources:
+  - ingress-service.yaml
+  - wordpress-clusterip-service.yaml
+  - wordpress-deployment.yaml
+  - wordpress-pv-claim.yaml
+  
